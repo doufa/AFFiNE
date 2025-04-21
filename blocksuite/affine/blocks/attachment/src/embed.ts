@@ -158,7 +158,6 @@ const embedConfig: AttachmentEmbedConfig[] = [
           allowfullscreen
           type="application/pdf"
         ></iframe>
-        <div class="affine-attachment-embed-event-mask"></div>
       `;
     },
   },
