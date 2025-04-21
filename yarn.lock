@@ -2375,6 +2375,7 @@ __metadata:
     "@blocksuite/affine-block-embed": "workspace:*"
     "@blocksuite/affine-block-surface": "workspace:*"
     "@blocksuite/affine-components": "workspace:*"
+    "@blocksuite/affine-ext-loader": "workspace:*"
     "@blocksuite/affine-model": "workspace:*"
     "@blocksuite/affine-shared": "workspace:*"
     "@blocksuite/affine-widget-slash-menu": "workspace:*"
@@ -2401,6 +2402,7 @@ __metadata:
     "@blocksuite/affine-block-embed": "workspace:*"
     "@blocksuite/affine-block-surface": "workspace:*"
     "@blocksuite/affine-components": "workspace:*"
+    "@blocksuite/affine-ext-loader": "workspace:*"
     "@blocksuite/affine-model": "workspace:*"
     "@blocksuite/affine-shared": "workspace:*"
     "@blocksuite/affine-widget-slash-menu": "workspace:*"
@@ -2424,6 +2426,7 @@ __metadata:
   resolution: "@blocksuite/affine-block-callout@workspace:blocksuite/affine/blocks/callout"
   dependencies:
     "@blocksuite/affine-components": "workspace:*"
+    "@blocksuite/affine-ext-loader": "workspace:*"
     "@blocksuite/affine-inline-preset": "workspace:*"
     "@blocksuite/affine-model": "workspace:*"
     "@blocksuite/affine-rich-text": "workspace:*"
@@ -2452,6 +2455,7 @@ __metadata:
   resolution: "@blocksuite/affine-block-code@workspace:blocksuite/affine/blocks/code"
   dependencies:
     "@blocksuite/affine-components": "workspace:*"
+    "@blocksuite/affine-ext-loader": "workspace:*"
     "@blocksuite/affine-gfx-turbo-renderer": "workspace:*"
     "@blocksuite/affine-inline-latex": "workspace:*"
     "@blocksuite/affine-inline-link": "workspace:*"
@@ -2965,6 +2969,17 @@ __metadata:
     rxjs: "npm:^7.8.1"
     shiki: "npm:^3.0.0"
     yjs: "npm:^13.6.21"
+    zod: "npm:^3.23.8"
+  languageName: unknown
+  linkType: soft
+
+"@blocksuite/affine-ext-loader@workspace:*, @blocksuite/affine-ext-loader@workspace:blocksuite/affine/ext-loader":
+  version: 0.0.0-use.local
+  resolution: "@blocksuite/affine-ext-loader@workspace:blocksuite/affine/ext-loader"
+  dependencies:
+    "@blocksuite/global": "workspace:*"
+    "@blocksuite/store": "workspace:*"
+    vitest: "npm:3.1.1"
     zod: "npm:^3.23.8"
   languageName: unknown
   linkType: soft

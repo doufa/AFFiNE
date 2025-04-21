@@ -70,6 +70,7 @@ export const PackageList = [
       'blocksuite/affine/blocks/embed',
       'blocksuite/affine/blocks/surface',
       'blocksuite/affine/components',
+      'blocksuite/affine/ext-loader',
       'blocksuite/affine/model',
       'blocksuite/affine/shared',
       'blocksuite/affine/widgets/slash-menu',
@@ -85,6 +86,7 @@ export const PackageList = [
       'blocksuite/affine/blocks/embed',
       'blocksuite/affine/blocks/surface',
       'blocksuite/affine/components',
+      'blocksuite/affine/ext-loader',
       'blocksuite/affine/model',
       'blocksuite/affine/shared',
       'blocksuite/affine/widgets/slash-menu',
@@ -98,6 +100,7 @@ export const PackageList = [
     name: '@blocksuite/affine-block-callout',
     workspaceDependencies: [
       'blocksuite/affine/components',
+      'blocksuite/affine/ext-loader',
       'blocksuite/affine/inlines/preset',
       'blocksuite/affine/model',
       'blocksuite/affine/rich-text',
@@ -113,6 +116,7 @@ export const PackageList = [
     name: '@blocksuite/affine-block-code',
     workspaceDependencies: [
       'blocksuite/affine/components',
+      'blocksuite/affine/ext-loader',
       'blocksuite/affine/gfx/turbo-renderer',
       'blocksuite/affine/inlines/latex',
       'blocksuite/affine/inlines/link',
@@ -416,6 +420,14 @@ export const PackageList = [
       'blocksuite/affine/shared',
       'blocksuite/framework/global',
       'blocksuite/framework/std',
+      'blocksuite/framework/store',
+    ],
+  },
+  {
+    location: 'blocksuite/affine/ext-loader',
+    name: '@blocksuite/affine-ext-loader',
+    workspaceDependencies: [
+      'blocksuite/framework/global',
       'blocksuite/framework/store',
     ],
   },
@@ -1249,6 +1261,7 @@ export type PackageName =
   | '@blocksuite/affine-block-table'
   | '@blocksuite/affine-components'
   | '@blocksuite/data-view'
+  | '@blocksuite/affine-ext-loader'
   | '@blocksuite/affine-fragment-doc-title'
   | '@blocksuite/affine-fragment-frame-panel'
   | '@blocksuite/affine-fragment-outline'
