@@ -232,6 +232,10 @@ export class GfxSelectionManager extends GfxExtension {
         assertType<CursorSelection[]>(cursor);
         assertType<SurfaceSelection[]>(surface);
 
+        if (cursor.length == 0 && surface.length == 0) {
+          return;
+        }
+
         if (cursor[0] && !this.cursorSelection?.equals(cursor[0])) {
           this._cursorSelection = cursor[0];
           this.slots.cursorUpdated.next(cursor[0]);
