@@ -232,7 +232,7 @@ export class GfxSelectionManager extends GfxExtension {
         assertType<CursorSelection[]>(cursor);
         assertType<SurfaceSelection[]>(surface);
 
-        if (cursor.length == 0 && surface.length == 0) {
+        if (cursor.length === 0 && surface.length === 0) {
           return;
         }
 
