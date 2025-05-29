@@ -98,9 +98,9 @@ describe('basic', () => {
 
     expect(refBlocks.length).toBe(2);
     expect(stackingCanvas.length).toBe(2);
-    // expect(stackingCanvas[0].style.zIndex > refBlocks[0].style.zIndex).toBe(
-    // true
-    // );
+    expect(stackingCanvas[0].style.zIndex > refBlocks[0].style.zIndex).toBe(
+      true
+    );
   });
 
   test('content in group should be rendered in the correct order', async () => {
